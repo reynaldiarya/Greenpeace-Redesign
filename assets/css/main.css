@@ -1,0 +1,61 @@
+/* Body */
+body {
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Open Sans';
+    font-size: 20px;
+}
+
+p {
+    font-family: 'Open Sans';
+    font-size: 16px;
+}
+
+/* Navbar */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 150px 10px 150px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+li {
+    float: left;
+}
+
+.kanan {
+    float: right;
+}
+
+ul > a > img{
+    text-align: center;
+    height: 24px;
+    margin-top:12px;
+}
+
+li a {
+    font-family: 'Open Sans';
+    font-size: 16px;
+    display: block;
+    color: #17706E;
+    text-align: center;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+/* Button */
+a.button {
+    margin-left: 25px;
+    border: none;
+    background-color: #FD5E53;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
