@@ -14,7 +14,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.1.0/less.min.js"></script> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
+    integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -94,21 +96,54 @@
       <h2>Aksi Kami</h2>
       <div class="card-grid">
         <div class="card-style-2">
-          <img src="/assets/images/gas-rumah-kaca.jpg" alt="Bersama Memperbaiki" />
+          <a class="lightbox" href="#popup-1">
+            <img src="/assets/images/quit-coal.jpg" alt="Bersama Memperbaiki" />
+          </a>
           <div class="container-card-style-2">
             <p>Quit Coal</p>
           </div>
-        </div>
-        <div class="card-style-2">
-          <img src="assets/images/kepunahan-badak.jpg" alt="Bersama Memperbaiki" />
-          <div class="container-card-style-2">
-            <p>Tim Cegah Api di Kalimantan Barat</p>
+          <div id="popup-1" class="mfp-hide popup-box">
+            <img src="/assets/images/quit-coal.jpg" width="1280" height="720" alt="" loading="lazy">
+            <div>
+              <p>Aktivis Greenpeace Indonesia membentangkan banner dengan pesan "Quit Coal", saat mereka memblokade
+                crane yang akan memuat batu bara di PLTU batu bara Cirebon, Jawa Barat. Aksi ini menjadi bagian dari
+                gerakan aksi global bertajuk Break Free yang berlangsung selama 4-15 Mei 2017 dan mendesak pemerintah
+                untuk tidak lagi mengeksploitasi batu bara, minyak bumi, dan gas alam. © Ardiles Rante</p>
+            </div>
           </div>
         </div>
         <div class="card-style-2">
-          <img src="assets/images/gunung-sampah.jpg" alt="Bersama Memperbaiki" />
+          <a class="lightbox" href="#popup-2">
+            <img src="/assets/images/tim-cegah-api.jpg" alt="Bersama Memperbaiki" />
+          </a>
+          <div class="container-card-style-2">
+            <p>Tim Cegah Api di Kalimantan Barat</p>
+          </div>
+          <div id="popup-2" class="mfp-hide popup-box">
+            <img src="/assets/images/tim-cegah-api.jpg" width="1280" height="720" alt="" loading="lazy">
+            <div>
+              <p>Tim cegah Api Greenpeace memadamkan api di lahan gambut yang terbakar di wilayah Desa Punggur Kecil,
+                Kec. Sungai Kakap, Kab. Kubu Raya, Pontianak, Kalimantan Barat. Tim Cegah Api ditugaskan di area lahan
+                gambut untuk mencegah api menjalar dan melakukan investigasi. © Rendra Hernawan</p>
+            </div>
+          </div>
+        </div>
+        <div class="card-style-2">
+          <a class="lightbox" href="#popup-3">
+            <img src="/assets/images/kebakaran-hutan.jpg" alt="Bersama Memperbaiki" />
+          </a>
           <div class="container-card-style-2">
             <p>Kebakaran Hutan Papua</p>
+          </div>
+          <div id="popup-3" class="mfp-hide popup-box">
+            <img src="/assets/images/kebakaran-hutan.jpg" width="1280" height="720" alt="" loading="lazy">
+            <div>
+              <p>Greenpeace menginvestigasi dan mendokumentasikan kebakaran pada lahan gambut di dekat PT Tunggal Mitra
+                Plantation - sebuah perusahaan kelapa sawit milik kelompok Sime Darby, anggota Roundtable on Sustainable
+                Palmoil (RSPO). Menurut grafik resmi terbaru, daerah di Desa Pujud, Kabupaten Rokan Hilir, Riau, Sumatra
+                dicakup oleh moratorium pemerintah Indonesia tentang penerbitan izin baru di hutan primer dan lahan
+                gambut. © Ulet Ifansasti</p>
+            </div>
           </div>
         </div>
       </div>
@@ -172,7 +207,7 @@
             ea commodo.</p>
         </div>
       </div>
-      <button>Lihat Lainnya</button>
+      <button style="margin-top: 50px;">Lihat Lainnya</button>
     </div>
   </section>
   <footer>
@@ -187,21 +222,21 @@
       <div class="card">
         <h6 class="footer-title">Perusahaan</h6>
         <div class="container-card">
-          <a href="#">Tentang Kami</a>
-          <a href="#">Kontak</a>
-          <a href="#">Bekerja</a>
-          <a href="#">Pers </a>
-          <a href="#">Supporter Care</a>
+          <a href="/tentang-kami.html">Tentang Kami</a>
+          <a href="/kontak.html">Kontak</a>
+          <a href="/bekerja.html">Bekerja</a>
+          <a href="/pers.html">Pers </a>
+          <a href="/supporter-care.html">Supporter Care</a>
         </div>
       </div>
       <div class="card">
         <h6 class="footer-title">Halaman Lain</h6>
         <div class="container-card">
-          <a href="#">Kebijakan Privasi</a>
-          <a href="#">Hak Cipta</a>
-          <a href="#">Ketentuan</a>
-          <a href="#">Kebijakan Komunitas</a>
-          <a href="#">FAQ</a>
+          <a href="/kebijakan-privasi.html">Kebijakan Privasi</a>
+          <a href="/hak-cipta.html">Hak Cipta</a>
+          <a href="/ketentuan.html">Ketentuan</a>
+          <a href="/kebijakan-komunitas.html">Kebijakan Komunitas</a>
+          <a href="/faq.html">FAQ</a>
         </div>
       </div>
       <div class="card">
@@ -216,6 +251,12 @@
     </div>
   </footer>
 </body>
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+  integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"
+  integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="/assets/js/main.js"></script>
 
 </html>

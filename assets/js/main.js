@@ -1,0 +1,1 @@
+$(".lightbox").magnificPopup({ type: "inline", fixedContentPos: !1, removalDelay: 100, closeBtnInside: !0, preloader: !1, mainClass: "mfp-fade" });

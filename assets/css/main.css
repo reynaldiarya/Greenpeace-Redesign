@@ -66,6 +66,14 @@ a {
     color: #FD5E53;
 }
 
+.biru-muda {
+    color: #2AA9E0;
+}
+
+.kuning {
+    color: #EEB838;
+}
+
 
 /* Navbar */
 ul {
@@ -74,6 +82,23 @@ ul {
     padding: 10px 150px 10px 150px;
     overflow: hidden;
     background-color: #fff;
+}
+
+ol {
+    display: block;
+    list-style-type: decimal;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 20px;
+}
+
+ol li {
+    text-align: left;
+    float: none;
+    font-family: 'Open Sans';
+    font-size: 18px;
 }
 
 li {
@@ -124,7 +149,6 @@ a.btn:hover {
     color: white;
 }
 
-
 @media screen and (max-width: 768px) {
     ul {
         text-align: left;
@@ -155,6 +179,24 @@ a.btn:hover {
         display: inline-block;
         cursor: pointer;
     }
+}
+
+.popup-box {
+    position: relative;
+    background: #FFF;
+    padding: 20px;
+    width: auto;
+    max-width: 768px;
+    margin: 0px auto;
+}
+
+.popup-box img {
+    width: 100%;
+    height: auto;
+}
+
+.mfp-close-btn-in .mfp-close {
+    color: #fff;
 }
 
 /* Hero */
@@ -200,7 +242,6 @@ a.btn:hover {
 button {
     font-family: 'Open Sans';
     font-size: 18px;
-    margin-top: 50px;
     border: none;
     outline: 0;
     display: inline-block;
@@ -240,13 +281,13 @@ button:hover {
 
 /* Section */
 .section-mid {
-    margin: 150px 150px 150px 150px;
+    margin: 150px;
     text-align: center;
 }
 
 /* Card */
 .card {
-    background-color: #eeeeee;
+    background-color: #f8f8f8;
     border-radius: 5px;
     margin: 25px 0;
 }
@@ -278,9 +319,29 @@ button:hover {
 
 .container-card {
     padding: 12px 35px;
-    background-color: #eeeeee;
+    background-color: #f8f8f8;
     border-radius: 5px;
     text-align: left;
+    overflow: auto;
+}
+
+.container-card button {
+    font-family: 'Open Sans';
+    font-size: 18px;
+    border: none;
+    outline: 0;
+    display: block;
+    float: right;
+    padding: 12px 25px;
+    background-color: #eeeeee;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.container-card button:hover {
+    background-color: #ea4a3e;
+    color: white;
 }
 
 .container-card a {
@@ -296,7 +357,7 @@ button:hover {
 .card-grid {
     display: grid;
     column-gap: 35px;
-    grid-template-columns: repeat( auto-fit, minmax(25%, 1fr) );
+    grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
 }
 
 .sec-3-home img {
@@ -312,7 +373,7 @@ button:hover {
     grid-template-columns: 450px auto;
 }
 
-.sec-artikel{
+.sec-artikel {
     margin-top: 35px;
 }
 
@@ -330,7 +391,7 @@ button:hover {
 
     /* Card */
     .card {
-        background-color: #eeeeee;
+        background-color: #f8f8f8;
         border-radius: 5px;
         margin: 25px 0;
     }
@@ -353,7 +414,7 @@ button:hover {
     .card-grid {
         display: grid;
         column-gap: 35px;
-        grid-template-columns: repeat( auto-fit, minmax(45%, 1fr) );
+        grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
     }
 
     .sec-3-home img {
@@ -371,13 +432,13 @@ button:hover {
 
 @media screen and (max-width: 992px) {
     .section-mid {
-        margin: 150px 0px;
+        margin: 150px 50px;
         text-align: center;
     }
 
     /* Card */
     .card {
-        background-color: #eeeeee;
+        background-color: #f8f8f8;
         border-radius: 5px;
         margin: 25px 0;
     }
@@ -400,7 +461,7 @@ button:hover {
     .card-grid {
         display: block;
         column-gap: 35px;
-        grid-template-columns: repeat( auto-fit, minmax(50%, 1fr) );
+        grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
     }
 
     .sec-3-home img {
@@ -418,13 +479,13 @@ button:hover {
 
 @media screen and (max-width: 768px) {
     .section-mid {
-        margin: 150px 0px;
+        margin: 150px 15px;
         text-align: center;
     }
 
     /* Card */
     .card {
-        background-color: #eeeeee;
+        background-color: #f8f8f8;
         border-radius: 5px;
         margin: 25px 0;
     }
@@ -437,6 +498,7 @@ button:hover {
     }
 
     .container-card {
+        padding: 12px 15px;
         text-align: center;
     }
 
@@ -447,7 +509,7 @@ button:hover {
     .card-grid {
         display: block;
         column-gap: 35px;
-        grid-template-columns: repeat( auto-fit, minmax(25%, 1fr) );
+        grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
     }
 
     .sec-3-home img {
@@ -613,6 +675,11 @@ footer>.card-grid>.card>.container-card>p {
         clear: left;
     }
 
+    footer>.card-grid>.card>.container-card>img {
+        width: 75%;
+        height: auto;
+    }
+
     footer>.card-grid>.card>.container-card>a {
         color: #fff;
         padding: 10px 35px;
@@ -667,6 +734,11 @@ footer>.card-grid>.card>.container-card>p {
 
     footer li {
         clear: left;
+    }
+
+    footer>.card-grid>.card>.container-card>img {
+        width: 50%;
+        height: auto;
     }
 
     footer>.card-grid>.card>.container-card>a {
