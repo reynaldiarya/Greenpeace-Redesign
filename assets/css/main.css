@@ -9,7 +9,7 @@ body {
 h1 {
     font-family: 'Poppins';
     display: block;
-    font-size: 54.9px;
+    font-size: 42px;
     font-weight: bold;
     margin: 0;
 }
@@ -17,7 +17,7 @@ h1 {
 h2 {
     font-family: 'Poppins';
     display: block;
-    font-size: 43.9px;
+    font-size: 33px;
     font-weight: bold;
     margin: 0;
 }
@@ -25,7 +25,7 @@ h2 {
 h3 {
     font-family: 'Poppins';
     display: block;
-    font-size: 35.2px;
+    font-size: 26px;
     font-weight: bold;
     margin: 0;
 }
@@ -33,7 +33,7 @@ h3 {
 h4 {
     font-family: 'Poppins';
     display: block;
-    font-size: 28.1px;
+    font-size: 20px;
     font-weight: bold;
     margin: 0;
 }
@@ -41,7 +41,7 @@ h4 {
 h5 {
     font-family: 'Poppins';
     display: block;
-    font-size: 22.5px;
+    font-size: 16px;
     font-weight: bold;
     margin: 0;
 }
@@ -49,7 +49,7 @@ h5 {
 h6 {
     font-family: 'Poppins';
     display: block;
-    font-size: 18px;
+    font-size: 13px;
     font-weight: bold;
     margin: 0;
 }
@@ -57,13 +57,13 @@ h6 {
 p {
     font-family: 'Poppins';
     display: block;
-    font-size: 18px;
-    margin: 0;
+    font-size: 16px;
+    margin: 1em 0;
 }
 
 a {
     font-family: 'Poppins';
-    font-size: 18px;
+    font-size: 16px;
 }
 
 a:link {
@@ -131,7 +131,7 @@ ol li {
     text-align: left;
     float: none;
     font-family: 'Poppins';
-    font-size: 18px;
+    font-size: 16px;
 }
 
 li {
@@ -152,6 +152,12 @@ li {
     align-items: center;
 }
 
+.bawah {
+    position: relative;
+bottom: 20px;
+right: 20px;
+}
+
 ul>a>img {
     text-align: center;
     height: 24px;
@@ -160,8 +166,8 @@ ul>a>img {
 
 li a {
     font-family: 'Poppins';
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 16px;
+    font-weight: normal;
     display: block;
     color: #21BF73;
     text-align: center;
@@ -209,7 +215,7 @@ a.btn:hover {
 /* Hero */
 .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/images/hero-home.png");
-    height: 700px;
+    height: 600px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -228,7 +234,7 @@ a.btn:hover {
 
 .hero-text button {
     font-family: 'Poppins';
-    font-size: 18px;
+    font-size: 16px;
     margin-top: 50px;
     border: none;
     outline: 0;
@@ -248,7 +254,7 @@ a.btn:hover {
 
 button {
     font-family: 'Poppins';
-    font-size: 18px;
+    font-size: 16px;
     border: none;
     outline: 0;
     display: inline-block;
@@ -303,6 +309,12 @@ button:hover {
     text-align: left;
 }
 
+.container-card-style-3 {
+    padding: 0;
+    border-radius: 5px;
+    text-align: left;
+}
+
 .container-card {
     padding: 12px 35px;
     background-color: #f8f8f8;
@@ -311,22 +323,22 @@ button:hover {
     overflow: auto;
 }
 
-.pers button {
-    background-color: #eeeeee;
-}
-
 .container-card button {
     font-family: 'Poppins';
-    font-size: 18px;
+    font-size: 16px;
     border: none;
     outline: 0;
     display: block;
     float: right;
     padding: 12px 25px;
-    background-color: #eeeeee;
+    background-color: #FD5E53;
     text-align: center;
     cursor: pointer;
     border-radius: 5px;
+}
+
+.pers button {
+    background-color: #eeeeee;
 }
 
 .container-card button:hover {
@@ -357,6 +369,21 @@ button:hover {
     margin: auto;
 }
 
+.sec-jelajah.card-grid {
+    display: grid;
+    column-gap: 35px;
+    grid-template-columns: auto auto;
+}
+
+.sec-jelajah img{
+    width: 700px;
+    height: 100%;
+}
+
+.btn-jelajah {
+    margin-top: 100px;
+}
+
 .sec-artikel.card-grid {
     display: grid;
     column-gap: 35px;
@@ -371,12 +398,13 @@ button:hover {
     width: 100%;
     max-width: 450px;
     border-radius: 5px;
+    margin: auto;
 }
 
 .map.card-grid {
     display: grid;
     column-gap: 35px;
-    grid-template-columns: 750px auto;
+    grid-template-columns: auto 450px;
 }
 
 .map-responsive {
@@ -407,7 +435,7 @@ button:hover {
 form {
     margin: 25px 0;
     font-family: 'Poppins';
-    font-size: 18px;
+    font-size: 16px;
 }
 
 input,
@@ -536,7 +564,22 @@ footer>.card-grid>.card>.container-card>p {
     }
 
     .map.card-grid {
-        grid-template-columns: 500px auto;
+        grid-template-columns: auto 400px;
+    }
+
+    .sec-jelajah.card-grid {
+        display: grid;
+        column-gap: 35px;
+        grid-template-columns: auto auto;
+    }
+
+    .sec-jelajah img{
+        width: 500px;
+        height: 100%;
+    }
+
+    .btn-jelajah {
+        margin-top: 50px;
     }
 
     footer {
@@ -640,7 +683,22 @@ footer>.card-grid>.card>.container-card>p {
     }
 
     .map.card-grid {
-        grid-template-columns: 400px auto;
+        grid-template-columns: auto 300px;
+    }
+
+    .sec-jelajah.card-grid {
+        display: grid;
+        column-gap: 35px;
+        grid-template-columns: auto;
+    }
+
+    .sec-jelajah img{
+        min-width: 400px;
+        height: 100%;
+    }
+
+    .btn-jelajah {
+        margin-top: 50px;
     }
 
     footer {
@@ -712,7 +770,7 @@ footer>.card-grid>.card>.container-card>p {
 
     li a {
         font-family: 'Poppins';
-        font-size: 18px;
+        font-size: 16px;
         font-weight: bold;
         display: block;
         color: #21BF73;
@@ -800,6 +858,21 @@ footer>.card-grid>.card>.container-card>p {
     .map.card-grid {
         display: block;
         grid-template-columns: auto auto;
+    }
+
+    .sec-jelajah.card-grid {
+        display: grid;
+        column-gap: 35px;
+        grid-template-columns: auto;
+    }
+
+    .sec-jelajah img{
+        min-width: 200px;
+        height: 100%;
+    }
+
+    .btn-jelajah {
+        margin-top: 25px;
     }
 
     footer {
