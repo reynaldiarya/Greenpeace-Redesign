@@ -272,6 +272,10 @@ button:hover {
 }
 
 /* Section */
+.container {
+    margin: 150px;
+}
+
 .section-mid {
     margin: 150px;
     text-align: center;
