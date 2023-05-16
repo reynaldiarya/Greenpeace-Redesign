@@ -110,6 +110,7 @@ a:visited:active {
 
 /* Navbar */
 ul {
+    font-family: 'Poppins';
     list-style-type: none;
     margin: 0;
     padding: 10px 150px 10px 150px;
@@ -274,6 +275,11 @@ button:hover {
 /* Section */
 .container {
     margin: 150px;
+}
+
+.container ul {
+    list-style-type: disc;
+    padding: 10px 35px;
 }
 
 .section-mid {
@@ -523,6 +529,10 @@ footer>.card-grid>.card>.container-card>p {
 }
 
 @media screen and (max-width: 1200px) {
+    .container {
+        margin: 150px 100px;
+    }
+
     .section-mid {
         margin: 150px 100px;
         text-align: center;
@@ -642,6 +652,10 @@ footer>.card-grid>.card>.container-card>p {
 }
 
 @media screen and (max-width: 992px) {
+    .container {
+        margin: 150px 50px;
+    }
+
     .section-mid {
         margin: 150px 50px;
         text-align: center;
@@ -814,8 +828,12 @@ footer>.card-grid>.card>.container-card>p {
         color: white;
     }
 
+    .container {
+        margin: 150px 25px;
+    }
+
     .section-mid {
-        margin: 150px 15px;
+        margin: 150px 25px;
         text-align: center;
     }
 
