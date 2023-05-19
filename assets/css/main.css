@@ -113,7 +113,7 @@ ul {
     font-family: 'Poppins';
     list-style-type: none;
     margin: 0;
-    padding: 10px 150px 10px 150px;
+    padding: 10px 200px 10px 200px;
     overflow: hidden;
     background-color: #fff;
 }
@@ -155,8 +155,8 @@ li {
 
 .bawah {
     position: relative;
-bottom: 20px;
-right: 20px;
+    bottom: 20px;
+    right: 20px;
 }
 
 ul>a>img {
@@ -216,7 +216,7 @@ a.btn:hover {
 /* Hero */
 .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/images/hero-home.png");
-    height: 600px;
+    height: 400px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -228,8 +228,8 @@ a.btn:hover {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 40%;
-    transform: translate(-100%, -50%);
+    width: 38%;
+    transform: translate(-97%, -50%);
     color: white;
 }
 
@@ -283,7 +283,7 @@ button:hover {
 }
 
 .section-mid {
-    margin: 150px;
+    margin: 100px 200px;
     text-align: center;
 }
 
@@ -298,7 +298,6 @@ button:hover {
     width: 100%;
     height: auto;
     border-radius: 5px;
-    margin-bottom: 10px;
 }
 
 .card-style-2 {
@@ -310,7 +309,6 @@ button:hover {
     width: 100%;
     height: auto;
     border-radius: 5px;
-    margin-bottom: 10px;
 }
 
 .container-card-style-2 {
@@ -374,24 +372,22 @@ button:hover {
 
 .sec-3-home img {
     width: 100%;
-    min-width: 600px;
+    min-width: 500px;
     border-radius: 5px;
     margin: auto;
 }
 
 .sec-jelajah.card-grid {
-    display: grid;
-    column-gap: 35px;
-    grid-template-columns: auto auto;
+    grid-auto-rows: 1fr
 }
 
-.sec-jelajah img{
-    width: 700px;
-    height: 100%;
+.sec-jelajah img {
+    max-width: auto;
+    height: 55%;
 }
 
 .btn-jelajah {
-    margin-top: 100px;
+    margin-top: 25px;
 }
 
 .sec-artikel.card-grid {
@@ -440,6 +436,7 @@ button:hover {
 .alamat p {
     margin-bottom: 25px;
 }
+
 
 /* Form */
 form {
@@ -529,12 +526,19 @@ footer>.card-grid>.card>.container-card>p {
 }
 
 @media screen and (max-width: 1200px) {
+    ul {
+        text-align: left;
+        padding: 10px 100px 10px 100px;
+        overflow: hidden;
+        background-color: #fff;
+    }
+
     .container {
         margin: 150px 100px;
     }
 
     .section-mid {
-        margin: 150px 100px;
+        margin: 100px 100px;
         text-align: center;
     }
 
@@ -549,7 +553,6 @@ footer>.card-grid>.card>.container-card>p {
         width: 100%;
         height: auto;
         border-radius: 5px;
-        margin-bottom: 10px;
     }
 
     .container-card {
@@ -582,18 +585,16 @@ footer>.card-grid>.card>.container-card>p {
     }
 
     .sec-jelajah.card-grid {
-        display: grid;
-        column-gap: 35px;
-        grid-template-columns: auto auto;
+        grid-auto-rows: 1fr
     }
 
-    .sec-jelajah img{
-        width: 500px;
-        height: 100%;
+    .sec-jelajah img {
+        max-width: auto;
+        height: 55%;
     }
 
     .btn-jelajah {
-        margin-top: 50px;
+        margin-top: 25px;
     }
 
     footer {
@@ -652,12 +653,13 @@ footer>.card-grid>.card>.container-card>p {
 }
 
 @media screen and (max-width: 992px) {
+
     .container {
         margin: 150px 50px;
     }
 
     .section-mid {
-        margin: 150px 50px;
+        margin: 100px 50px;
         text-align: center;
     }
 
@@ -672,7 +674,6 @@ footer>.card-grid>.card>.container-card>p {
         width: 100%;
         height: auto;
         border-radius: 5px;
-        margin-bottom: 10px;
     }
 
     .container-card {
@@ -705,18 +706,16 @@ footer>.card-grid>.card>.container-card>p {
     }
 
     .sec-jelajah.card-grid {
-        display: grid;
-        column-gap: 35px;
-        grid-template-columns: auto;
+        grid-auto-rows: 1fr
     }
 
-    .sec-jelajah img{
-        min-width: 400px;
-        height: 100%;
+    .sec-jelajah img {
+        max-width: auto;
+        height: 55%;
     }
 
     .btn-jelajah {
-        margin-top: 50px;
+        margin-top: 25px;
     }
 
     footer {
@@ -833,7 +832,7 @@ footer>.card-grid>.card>.container-card>p {
     }
 
     .section-mid {
-        margin: 150px 25px;
+        margin: 100px 25px;
         text-align: center;
     }
 
@@ -848,7 +847,6 @@ footer>.card-grid>.card>.container-card>p {
         width: 100%;
         height: auto;
         border-radius: 5px;
-        margin-bottom: 10px;
     }
 
     .container-card {
@@ -883,14 +881,12 @@ footer>.card-grid>.card>.container-card>p {
     }
 
     .sec-jelajah.card-grid {
-        display: grid;
-        column-gap: 35px;
-        grid-template-columns: auto;
+        grid-auto-rows: 1fr
     }
 
-    .sec-jelajah img{
-        min-width: 200px;
-        height: 100%;
+    .sec-jelajah img {
+        max-width: auto;
+        height: 55%;
     }
 
     .btn-jelajah {
