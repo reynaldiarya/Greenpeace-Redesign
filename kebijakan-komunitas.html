@@ -15,6 +15,7 @@
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <nav>
         <ul>
@@ -31,9 +32,134 @@
             style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/images/Kebijakan-komunitas.png');">
             <div class="hero-text">
                 <h1 style="margin-bottom: 0px">
-                    kebijakan-komunitas
+                    Kebijakan Komunitas
                 </h1>
             </div>
         </div>
     </section>
+    <section>
+        <div class="container">
+            <p>
+                Di Greenpeace, kami bertekad untuk mewujudkan dunia yang lebih hijau dan damai,
+                dan cara untuk mewujudkannya adalah dengan komunikasi yang terbuka dan jujur.
+            </p>
+            <p>
+                Kami percaya bahwa setiap orang berhak mengutarakan pendapat dengan harapan dapat menemukan
+                kesepakatan bersama. Kami mengedepankan kompromi yang memungkinkan kita untuk
+                maju bersama-sama menuju masa depan yang lebih cerah.
+            </p>
+    </section>
+    <section class="section-mid">
+        <div class="card">
+            <button type="button" class="collapsible">
+                <h3>1. Katakan kebenaran</h3>
+            </button>
+            <div class="content-collapsible">
+                <!-- <p>Harus Benar</p> -->
+            </div>
+        </div>
+        <div class="card">
+            <button type="button" class="collapsible">
+                <h3>2. Jujur mengenai siapa dirimu</h3>
+            </button>
+            <div class="content-collapsible">
+                <p>Jika kamu mewakili kepentingan perusahaan atau pemerintah, tidak apa jika ingin berkontribusi dalam
+                    percakapan yang terjadi. Namun, kami akan sangat menghargai jika kamu terbuka agar orang lain dapat
+                    mengerti dan menghargai pendapatmu.</p>
+            </div>
+        </div>
+        <div class="card">
+            <button type="button" class="collapsible">
+                <h3>3. Sopan dan tenggang rasa</h3>
+            </button>
+            <div class="content-collapsible">
+                <p>Tulislah hal-hal seperti yang ingin kamu baca. Jangan menulis komentar diskriminatif, menyerang
+                    pribadi, menggunakan bahasa kasar, menulis pernyataan fitnah, dan menghasut kekerasan.</p>
+            </div>
+        </div>
+        <div class="card">
+            <button type="button" class="collapsible">
+                <h3>4. Beri kesempatan agar semua orang dapat berpartisipasi</h3>
+            </button>
+            <div class="content-collapsible">
+                <p>Kami dapat menghapus pos jika kamu membuat pos secara berlebihan.</p>
+            </div>
+        </div>
+        <div class="card">
+            <button type="button" class="collapsible">
+                <h3>5. Tetap fokus kepada topik yang diperbincangkan</h3>
+            </button>
+            <div class="content-collapsible">
+                <p>Hal ini akan membantu orang lain yang ingin berpartisipasi dalam percakapan.</p>
+            </div>
+        </div>
+        <div class="card">
+            <button type="button" class="collapsible">
+                <h3>6. Tidak berjualan</h3>
+            </button>
+            <div class="content-collapsible">
+                <p>Ini adalah ruang untuk berdebat mengenai permasalahan penting, jadi mohon untuk tidak melakukan
+                    segala aktivitas komersial atau promosi massal karena kami mempunyai nol toleransi untuk spam.</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="card-grid">
+            <div class="card">
+                <div class="container-card">
+                    <img src="assets/images/greenpeace-putih.png" alt="">
+                    <p>Lorem ipsum dolor sit amet consc tetur adicing elit. Dolor emque dicta molest enim beatae ame
+                        consequ atur
+                        tempo pretium auctor nam.</p>
+                </div>
+            </div>
+            <div class="card">
+                <h4 class="footer-title">Perusahaan</h4>
+                <div class="container-card">
+                    <a href="/tentang-kami.html">Tentang Kami</a>
+                    <a href="/kontak.html">Kontak</a>
+                    <a href="/bekerja.html">Bekerja</a>
+                    <a href="/pers.html">Pers </a>
+                    <a href="/supporter-care.html">Supporter Care</a>
+                </div>
+            </div>
+            <div class="card">
+                <h4 class="footer-title">Halaman Lain</h4>
+                <div class="container-card">
+                    <a href="/kebijakan-privasi.html">Kebijakan Privasi</a>
+                    <a href="/hak-cipta.html">Hak Cipta</a>
+                    <a href="/ketentuan.html">Ketentuan</a>
+                    <a href="/kebijakan-komunitas.html">Kebijakan Komunitas</a>
+                    <a href="/faq.html">FAQ</a>
+                </div>
+            </div>
+            <div class="card">
+                <h4 class="footer-title">Kantor Greenpeace</h4>
+                <div class="container-card">
+                    <p><i class="fa-solid fa-location-dot"></i> Jalan Angkasa Pura Genteng 22</p>
+                    <p><i class="fa-solid fa-phone"></i> +62811111111111</p>
+                    <a href="mailto:iniemail@gmail.com"><i class="fa-solid fa-envelope"></i> iniemail@gmail.com</a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
 </body>
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
+</script>
+
+</html>

@@ -72,18 +72,76 @@ a:link {
     cursor: pointer;
 }
 
-a:visited {
-    color: #2AA9E0;
+a:hover {
+    color: #FD5E53;
     text-decoration: none;
     cursor: pointer;
 }
 
-a:link:active {
+a:active {
     color: #19975a;
 }
 
-a:visited:active {
-    color: #19975a;
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: 1px solid #ddd;
+}
+
+.pagination a.active {
+    background-color: #FD5E53;
+    color: white;
+    border: 1px solid #FD5E53;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #FD5E53;
+    color: white;
+    border: 1px solid #FD5E53;
+}
+
+.pagination a:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.pagination a:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.collapsible {
+    background-color: #eee;
+    color: #000;
+    cursor: pointer;
+    padding: 20px 35px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.collapsible:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+.content-collapsible {
+    border-top: #ccc solid 1px;
+    padding: 10px 35px;
+    text-align: left;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    border-radius: 0px 0px 5px 5px;
 }
 
 /* Warna */
@@ -113,7 +171,7 @@ ul {
     font-family: 'Poppins';
     list-style-type: none;
     margin: 0;
-    padding: 10px 200px 10px 200px;
+    padding: 10px 50px 10px 50px;
     overflow: hidden;
     background-color: #fff;
 }
@@ -135,7 +193,7 @@ ol li {
     font-size: 16px;
 }
 
-li {
+nav li {
     float: left;
 }
 
@@ -306,6 +364,11 @@ button:hover {
     text-align: center;
 }
 
+.section-mid .bekerja-banner {
+    padding: 50px 200px;
+    text-align: center;
+}
+
 /* Card */
 .card {
     background-color: #f8f8f8;
@@ -318,6 +381,7 @@ button:hover {
     height: auto;
     border-radius: 5px;
 }
+
 
 .bekerja img {
     width: 100%;
@@ -349,12 +413,13 @@ button:hover {
 }
 
 .container-card {
-    padding: 12px 35px;
+    padding: 25px 35px;
     background-color: #f8f8f8;
     border-radius: 5px;
     text-align: left;
     overflow: auto;
 }
+
 
 .container-card button {
     font-family: 'Poppins';
@@ -557,7 +622,7 @@ footer>.card-grid>.card>.container-card>p {
 @media screen and (max-width: 1200px) {
     ul {
         text-align: left;
-        padding: 10px 100px 10px 100px;
+        padding: 10px 50px 10px 50px;
         overflow: hidden;
         background-color: #fff;
     }
@@ -1023,4 +1088,26 @@ footer>.card-grid>.card>.container-card>p {
         padding: 10px 35px;
         text-align: center;
     }
+
+    .checkbox {
+        position: relative;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    /* Tampilan centang ketika tombol diberi tanda centang */
+    .checkbox:checked::before {
+        content: '\2713';
+        /* Kode untuk simbol centang */
+        position: absolute;
+        top: 2px;
+        left: 6px;
+        font-size: 16px;
+        color: #fff;
+    }
+
 }
