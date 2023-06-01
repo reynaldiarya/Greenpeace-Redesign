@@ -29,27 +29,88 @@
     </nav>
     <section>
         <div class="section-mid">
-            <h2>Donasi</h2>
             <div class="card">
-                <div class="container-card-style-3">
-                    <div class="card-grid">
-                        <img src="/assets/images/proyek-minyak-bumi.jpg" alt="Bersama Memperbaiki"
-                            style="height: 100%;" />
-                        <div style="padding: 25px;">
-                            <h3 style="margin-top: 0px;">Rincian pembayaran</h3>
-                            <input type="checkbox" id="checkbox" class="checkbox">
-                            <label for="checkbox">Centang saya!</label>
-                            <div class="btn-aksi" style="position: relative;">
+                <img src="/assets/images/bekerja-2.jpg" alt="Bersama Memperbaiki" />
+                <div class="container-card" style="background-color: white; padding: 25px 0px">
+                    <h3>Akal-akalan oligarki dengan izinkan ekspor pasir laut lagi</h3>
+                    <p>Setelah 20 tahun dilarang, praktik ekspor pasir laut kembali diizinkan oleh pemerintah melalui
+                        Peraturan Pemerintah Nomor 26 Tahun 2023 tentang Pengelolaan Hasil Sedimentasi di Laut. Regulasi
+                        yang ditandatangani Presiden Joko Widodo pada 15 Mei 2023 lalu tersebut menganulir peraturan
+                        sebelumnya yang diterbitkan pada 2002.</p>
 
+                    <p> Jika merujuk ke klaim pemerintah, PP 26/2023 diterbitkan untuk pemulihan lingkungan dan
+                        keberlanjutan. Padahal, Pasal 9 dan Pasal 15 dalam beleid tersebut mengatur tentang ekspor pasir
+                        laut.</p>
 
-                                <button class="kanan" style="position: relative;">Ikut Beraksi</i></button>
+                    <p> Mengeruk dasar laut untuk diambil pasirnya saja sudah merusak, apalagi kalau dilakukannya demi
+                        cuan!</p>
+
+                    <p> Ditambah lagi, aktivitas ini akan membuat pulau-pulau kecil di sekitar wilayah yang ditambang
+                        makin cepat tenggelam karena perubahan kontur dasar laut. Habitat bawah laut yang terganggu juga
+                        akan membuat ikan tidak bisa bertahan hidup, sehingga akan berpengaruh pada kehidupan masyarakat
+                        pesisir dan nelayan tradisional.</p>
+
+                    <p> Lagi dan lagi, pemerintah membuktikan bahwa mereka tidak mampu mengelola sumber daya secara
+                        cerdas. Aktivitas ekstraktif menjadi salah satu jalan pintas favorit pemerintah Indonesia tanpa
+                        mempertimbangkan secara matang aspek ekologis dan hak asasi manusia.</p>
+
+                    <p> Karpet merah kembali digelar untuk oligarki…</p>
+                </div>
+            </div>
+            <button id="myBtn">Bantu Sekarang</button>
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div>
+                        <img src="/assets/images/bekerja-2.jpg" alt="Bersama Memperbaiki"
+                            style="width: 100%;" />
+                        <h3>Akal-akalan oligarki dengan izinkan ekspor pasir laut lagi</h3>
+                        <div style="margin: 15px 0px;">
+                            <label for="nama" style="text-align: left;">Nama</label>
+                            <input type="text" id="nama" name="nama" placeholder="Nama">
+                        </div>
+                        <div style="margin: 15px 0px;">
+                            <label for="nama" style="text-align: left;">Email</label>
+                            <input type="text" id="nama" name="nama" placeholder="Email">
+                        </div>
+                        <div style="margin: 15px 0px;">
+                            <label for="nama" style="text-align: left;">No. Telepon</label>
+                            <input type="text" id="nama" name="nama" placeholder="No. Telepon">
+                        </div>
+                        <h3 style="margin-top: 0px;">Rincian Donasi</h3>
+                        <div style="margin: 15px 0px;">
+                            <label for="nama" style="text-align: left;">Nominal Donasi</label>
+                            <input type="text" id="nama" name="nama" oninput="formatCurrency(this)"
+                                placeholder="Rp10.000">
+                        </div>
+                        <h3 style="margin-top: 0px;">Metode Pembayaran</h3>
+
+                        <div style="text-align: left; margin-top: 25px;">
+                            <div style="margin: 10px 0;">
+                                <label class="radio" style="display: inline;">Transfer bank
+                                    <input type="radio" checked="checked" name="radio">
+                                    <span class="checkmark"></span>
+                                    <img src="/assets/images/logo-bca.png" alt="Bersama Memperbaiki"
+                                        style="width: 10%; vertical-align: middle; margin-left: 15px;" />
+                                        <img src="/assets/images/logo-mandiri.png" alt="Bersama Memperbaiki"
+                                        style="width: 10%; vertical-align: middle; margin-left: 15px;" />
+                                </label>
+                            </div>
+                            <div style="margin: 10px 0;">
+                                <label class="radio" style="display: inline;">Virtual Account
+                                    <input type="radio" checked="checked" name="radio">
+                                    <span class="checkmark"></span>
+                                    <img src="/assets/images/logo-midtrans.png" alt="Bersama Memperbaiki"
+                                        style="width: 10%; vertical-align: middle; margin-left: 15px;" />
+                                </label>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <h3>"Jaga alam kita bersama berdonasilah sekarang"</h3>
-        </div>
     </section>
     <footer>
         <div class="card-grid">
@@ -93,5 +154,47 @@
         </div>
     </footer>
 </body>
+<script>
+    var modal = document.getElementById("myModal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal
+    btn.onclick = function () {
+        modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+<script>
+    function formatCurrency(input) {
+        // Mengambil nilai input
+        let value = input.value;
+
+        // Menghapus semua karakter selain digit
+        value = value.replace(/\D/g, '');
+
+        // Menambahkan simbol "Rp" di depan nilai
+        value = 'Rp' + value;
+
+        // Menampilkan kembali nilai yang telah diformat
+        input.value = value;
+    }
+
+</script>
 
 </html>
