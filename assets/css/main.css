@@ -607,6 +607,12 @@ button:hover {
     grid-template-columns: 450px auto;
 }
 
+.donasi.card-grid {
+    display: grid;
+    column-gap: 0px;
+    grid-template-columns: 60% 40%;
+}
+
 .sec-artikel {
     margin-top: 35px;
 }
@@ -682,6 +688,13 @@ input[type=submit] {
 
 input[type=submit]:hover {
     background-color: #45a049;
+}
+
+select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16px' height='16px' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M6.1018 8C5.02785 8 4.45387 9.2649 5.16108 10.0731L10.6829 16.3838C11.3801 17.1806 12.6197 17.1806 13.3169 16.3838L18.8388 10.0731C19.5459 9.2649 18.972 8 17.898 8H6.1018Z' fill='%23212121'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.5rem center;
 }
 
 /* Footer */
@@ -939,6 +952,12 @@ footer>.card-grid>.card>.container-card>p {
         grid-auto-rows: 1fr
     }
 
+    .donasi.card-grid {
+        display: grid;
+        column-gap: 0px;
+        grid-template-columns: 65% 35%;
+    }
+
     .sec-jelajah img {
         width: 100%;
         height: 55%;
@@ -1145,6 +1164,12 @@ footer>.card-grid>.card>.container-card>p {
 
     .sec-jelajah.card-grid {
         grid-auto-rows: 1fr
+    }
+
+    .donasi.card-grid {
+        display: block;
+        column-gap: 0px;
+        grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
     }
 
     .sec-jelajah img {

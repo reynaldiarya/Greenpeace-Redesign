@@ -28,8 +28,56 @@
         </ul>
     </nav>
     <section>
-        <div class="section-mid">
+        <div class="section-mid" style="margin-top: 50px;">
+            <h2 class="hijau-tua" style="margin-bottom: 50px;">Donasi</h2>
             <div class="card">
+                <div class="container-card-style-3">
+                    <div class="donasi card-grid">
+                        <img id="selected-image" src="/assets/images/proyek-minyak-bumi.jpg" alt="Bersama Memperbaiki"
+                            style="height: 100%;" />
+                        <div style="padding: 25px;">
+                            <h3 class="hijau-tua tengah" style="margin-top: 25px; margin-bottom: 25px;">Rincian
+                                pembayaran</h3>
+                            <h4></h4>
+                            <form action="action_page.php" style="margin: 0">
+                                <label for="nama">Judul Campaign</label>
+                                <!-- <input type="text" id="nama" name="nama" value="Kurangi produksi sampah plastik" placeholder="Nama"> -->
+                                <select id="image-select" onchange="changeImage()">
+                                    <option selected disabled>Pilih Campaign:</option>
+                                    <option value="1">Kurangi produksi sampah plastik</option>
+                                    <option value="2">Bulan Ramadhan: Bersihkan Hati, Pikiran, dan Lingkungan</option>
+                                </select>
+                                <label for="email">Nominal</label>
+                                <input type="text" id="email" name="email" placeholder="Nominal"
+                                    oninput="formatCurrency(this)">
+                                <div style="margin: 10px 0;">
+                                    <label class="radio" style="display: inline;">Transfer bank
+                                        <input type="radio" checked="checked" name="radio">
+                                        <span class="checkmark"></span>
+                                        <img src="/assets/images/logo-bca.png" alt="Bersama Memperbaiki"
+                                            style="width: 10%; vertical-align: middle; margin-left: 15px;" />
+                                        <img src="/assets/images/logo-mandiri.png" alt="Bersama Memperbaiki"
+                                            style="width: 10%; vertical-align: middle; margin-left: 15px;" />
+                                    </label>
+                                </div>
+                                <div style="margin: 10px 0;">
+                                    <label class="radio" style="display: inline;">Virtual Account
+                                        <input type="radio" checked="checked" name="radio">
+                                        <span class="checkmark"></span>
+                                        <img src="/assets/images/logo-midtrans.png" alt="Bersama Memperbaiki"
+                                            style="width: 10%; vertical-align: middle; margin-left: 15px;" />
+                                    </label>
+                                </div>
+                                <div class="tengah" style="margin-top: 25px;">
+                                    <button type="submit">Bayar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3 class="hijau-tua" style="margin-top: 50px;">"Jaga alam kita bersama berdonasilah sekarang"</h3>
+            <!-- <div class="card">
                 <img src="/assets/images/bekerja-2.jpg" alt="Bersama Memperbaiki" />
                 <div class="container-card" style="background-color: white; padding: 25px 0px">
                     <h3>Akal-akalan oligarki dengan izinkan ekspor pasir laut lagi</h3>
@@ -58,10 +106,8 @@
                 </div>
             </div>
             <button id="myBtn">Bantu Sekarang</button>
-            <!-- The Modal -->
             <div id="myModal" class="modal">
 
-                <!-- Modal content -->
                 <div class="modal-content">
                     <span class="close">&times;</span>
                     <div>
@@ -111,7 +157,8 @@
                         <button style="margin-top: 20px;">Bantu Sekarang</button>
                     </div>
                 </div>
-            </div>
+            </div> -->
+        </div>
     </section>
     <footer>
         <div class="card-grid">
@@ -155,7 +202,7 @@
         </div>
     </footer>
 </body>
-<script>
+<!-- <script>
     var modal = document.getElementById("myModal");
 
     // Get the button that opens the modal
@@ -180,6 +227,22 @@
             modal.style.display = "none";
         }
     }
+</script> -->
+<script>
+    var imageMap = {
+        "1": "/assets/images/proyek-minyak-bumi.jpg",
+        "2": "/assets/images/bulan-ramadan.jpg"
+    };
+
+    function changeImage() {
+        var selectElement = document.getElementById("image-select");
+        var selectedValue = selectElement.value;
+        var selectedImage = imageMap[selectedValue];
+        var imageElement = document.getElementById("selected-image");
+        console.log(imageElement);
+        imageElement.src = selectedImage;
+    }
+
 </script>
 <script>
     function formatCurrency(input) {
