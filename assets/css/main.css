@@ -1063,7 +1063,7 @@ footer > .card-grid > .card > .container-card > p {
   .hero-image {
     background-image:
       linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("assets/images/hero-home.png");
+      url("../images/hero-home.png");
     height: 700px;
     background-position: center;
     background-repeat: no-repeat;
@@ -1074,7 +1074,7 @@ footer > .card-grid > .card > .container-card > p {
   .hero-image-blog {
     background-image:
       linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("assets/images/hero-home.png");
+      url("../images/hero-home.png");
     height: 700px;
     background-position: center;
     background-repeat: no-repeat;
