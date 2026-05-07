@@ -1,45 +1,140 @@
 # Greenpeace Redesign
 
-**Greenpeace Redesign** adalah proyek untuk memperbarui dan meningkatkan antarmuka serta pengalaman pengguna (UX) dari situs web Greenpeace. Proyek ini bertujuan untuk memberikan tampilan yang lebih modern, responsif, dan user-friendly, sekaligus mendukung misi Greenpeace dalam menyebarkan kesadaran akan isu-isu lingkungan.
+A modern, responsive web application redesign for Greenpeace Indonesia, focused on environmental advocacy and community engagement.
 
-## Fitur Utama
+<p align="center">
+  <img src="https://img.shields.io/badge/version-1.0.0-blue.svg" />
+  <img src="https://img.shields.io/badge/HTML5-E34F26.svg" />
+  <img src="https://img.shields.io/badge/CSS3-1572B6.svg" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E.svg" />
+  <a href="LICENSE">
+    <img alt="License" src="https://img.shields.io/badge/license-MIT-yellow.svg" target="_blank" />
+  </a>
+</p>
 
-- **Desain Modern**: Tampilan baru dengan estetika yang bersih dan berfokus pada pengalaman pengguna.
-- **Navigasi Mudah**: Struktur navigasi yang dioptimalkan untuk memudahkan pengguna menjelajahi konten.
-- **Responsif**: Desain yang berfungsi optimal di semua perangkat, termasuk desktop, tablet, dan ponsel.
-- **Halaman Kampanye**: Penyesuaian khusus untuk menampilkan kampanye aktif Greenpeace dengan informasi yang menarik.
-- **Formulir Donasi**: Formulir yang intuitif untuk memudahkan proses donasi.
-- **Konten Interaktif**: Infografis dan elemen visual yang mendukung pesan kampanye.
+## Description
 
-## Tujuan Proyek
+Greenpeace Redesign is a comprehensive frontend overhaul of the Greenpeace Indonesia digital presence. The project addresses the need for a more intuitive, impactful, and accessible platform to mobilize climate action. By utilizing modern web standards and high-fidelity layouts, it provides a seamless experience for users to explore environmental issues, participate in campaigns, and contribute to global sustainability efforts.
 
-1. Memperbarui tampilan situs web Greenpeace agar lebih relevan dengan tren desain terkini.
-2. Mempermudah pengunjung dalam mengakses informasi tentang isu lingkungan dan kampanye aktif.
-3. Meningkatkan konversi dari pengunjung menjadi donatur atau peserta kampanye.
+## Features
 
-## Teknologi yang Digunakan
+- **Dynamic Hero Interactions** - Engaging visual storytelling with clear calls to action to drive immediate user participation
+- **Comprehensive Article System** - Structured content delivery for environmental news, investigative reports, and educational resources
+- **Interactive Action Hub** - Dedicated modules for current campaigns, allowing users to stay informed and get involved in local activism
+- **Streamlined Donation Portal** - Optimized user journey for financial contributions, designed to maximize conversion and support
+- **Rich Media Integration** - Lightbox-enabled galleries for documenting field investigations and environmental documentation
+- **Full Responsive Design** - Fluid layouts that ensure accessibility across mobile, tablet, and desktop devices
+- **Administrative Transparency** - Dedicated sections for privacy policies, community guidelines, and organizational information
 
-- **HTML5**: Untuk struktur halaman web.
-- **Vanilla CSS**: Untuk desain yang fleksibel dan responsif tanpa framework tambahan.
-- **JavaScript**: Untuk interaktivitas dasar.
+## Tech Stack
 
-## Cara Menjalankan Proyek
+- **Markup**: Semantic HTML5
+- **Styling**: Vanilla CSS3 with Custom Properties
+- **Logic**: JavaScript (ES6+), jQuery 3.6.4
+- **Components**: Magnific Popup (Media Lightboxes), Font Awesome 6.4.0 (Icons)
+- **Deployment**: Static Web Hosting compatible
 
-1. Clone repository ini ke komputer Anda:
-   ```bash
-   git clone https://github.com/reynaldiarya/Greenpeace-Redesign.git
-   ```
-2. Buka folder proyek:
-   ```bash
-   cd Greenpeace-Redesign
-   ```
-3. Jalankan file `index.html` langsung di browser favorit Anda.
+## Installation Guide
 
-## Lisensi
+### Prerequisites
 
-Proyek ini dilisensikan di bawah Lisensi MIT. Anda bebas untuk menggunakan, mengedit, dan mendistribusikannya dengan atribusi yang sesuai.
+- A modern web browser (Chrome, Firefox, Safari, or Edge)
+- A local web server (optional, but recommended for testing)
 
----
+### Steps
 
-**Catatan:** Proyek ini dibuat untuk memenuhi tugas mata kuliah Desain UI/UX dan bertujuan untuk melatih kemampuan dalam mendesain antarmuka web menggunakan HTML dan CSS.
+1. Clone the repository to your local machine
 
+```bash
+git clone https://github.com/reynaldiarya/Greenpeace-Redesign.git
+```
+
+2. Navigate to the project directory
+
+```bash
+cd Greenpeace-Redesign
+```
+
+3. Open the project in your preferred code editor or browser
+
+```bash
+# Using a local server (e.g., Live Server in VS Code)
+# or simply opening index.html
+open index.html
+```
+
+## Configuration
+
+As a static frontend project, configuration is primarily handled within the HTML and CSS files.
+
+### Branding Customization
+
+**Updating the Logo:**
+Replace the existing images in `assets/images/greenpeace-logo.png` and `assets/images/greenpeace-putih.png` with your organization's assets.
+
+**Modifying Color Palette:**
+The primary design tokens are managed within `assets/css/main.css`. Update the color definitions to match your branding:
+
+```css
+:root {
+  --primary-green: #00d93d;
+  --dark-green: #00a02a;
+  --white: #ffffff;
+  --text-dark: #333333;
+}
+```
+
+## Usage
+
+### Campaign Management
+
+To add a new campaign or action, navigate to `aksi.html` and replicate the card structure. Ensure the `lightbox` class is applied to image links to trigger the Magnific Popup functionality.
+
+### Article Publishing
+
+New articles can be added by creating a new HTML file (e.g., `detail-artikel-4.html`) and linking it from the `artikel.html` grid. Use the `detail-artikel.html` template for consistent typography and layout.
+
+## Project Structure
+
+```text
+/
+├── assets/
+│   ├── css/
+│   │   └── main.css            # Primary stylesheet containing all UI tokens
+│   ├── images/                 # Project assets including icons and hero images
+│   └── js/
+│       └── main.js             # Interaction logic and plugin initialization
+├── index.html                  # Landing page and primary entry point
+├── aksi.html                   # Campaigns and actions overview
+├── donasi.html                 # Contribution and donation flow
+├── artikel.html                # News and articles directory
+├── tentang-kami.html           # Organizational history and mission
+├── faq.html                    # Frequently Asked Questions
+└── LICENSE                     # Project licensing information
+```
+
+## Scripts / Commands
+
+| Action | Description |
+|--------|-------------|
+| Open `index.html` | Launches the main application in a browser |
+| Edit `main.css` | Modifies global styling and responsive breakpoints |
+| Update `main.js` | Configures popup behavior and event handlers |
+
+## Contributing
+
+Contributions are essential to the improvement of this platform. To contribute:
+
+1. Fork the repository
+2. Create a specific feature branch (`git checkout -b feature/improvement-name`)
+3. Commit your changes with descriptive messages (`git commit -m 'Implement new navigation'`)
+4. Push to your branch (`git push origin feature/improvement-name`)
+5. Open a Pull Request for review
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for the full text.
+
+## Author
+
+Reynaldi Arya
